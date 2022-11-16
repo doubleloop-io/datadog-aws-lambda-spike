@@ -26,6 +26,7 @@
         "typescript": "4.8.4",
         "serverless": "3.22.0",
         "serverless-esbuild": "1.32.8",
+        "serverless-plugin-datadog": "5.11.0",
         "aws-sdk": "2.1234.0",
         "@types/aws-lambda": "8.10.107"
     }

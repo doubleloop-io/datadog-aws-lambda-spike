@@ -2,6 +2,7 @@ service: datadog-aws-lambda
 
 plugins:
     - serverless-esbuild
+    - serverless-plugin-datadog
 
 package:
     individually: true
@@ -67,3 +68,6 @@ custom:
         number: 3
     stage: "dev"
     eventBusName: ${env:EVENT_BUS_NAME, "datadog-aws-lambda-event-bus-${self:custom.stage}"}
+    datadog:
+        site: datadoghq.eu
+        apiKey: ${env:DATADOG_API_KEY}
