@@ -56,7 +56,7 @@ custom:
     esbuild:
         packager: npm
         watch:
-            pattern: ["src/**/*.ts", "../../common/**/src/**/*.ts"]
+            pattern: ["src/**/*.ts"]
             ignore: [".serverless/**/*", ".build"] # default ['.build', 'dist', 'node_modules']
         sourcemap: true
         keepNames: true
