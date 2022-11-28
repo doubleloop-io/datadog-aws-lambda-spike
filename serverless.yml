@@ -13,9 +13,6 @@ provider:
     timeout: 20
     apiGateway:
         shouldStartNameWithService: true
-    tracing:
-        apiGateway: true
-        lambda: true
     iam:
         role:
             statements:
