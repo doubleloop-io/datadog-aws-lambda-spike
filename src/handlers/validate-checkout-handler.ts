@@ -8,7 +8,7 @@ const checkEventSent = (result: PromiseResult<AwsEventBridge.PutEventsResponse, 
 
 const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
     const body = event.body || JSON.stringify({ message: "No body provided" })
-    console.log("VALIDATE CHECKOUT", { body })
+    console.log("VALIDATE CHECKOUT", { event })
 
     const detailType = "checkoutProcessValidated"
 

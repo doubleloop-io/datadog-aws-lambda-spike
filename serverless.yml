@@ -68,3 +68,4 @@ custom:
     datadog:
         site: datadoghq.eu
         apiKey: ${env:DATADOG_API_KEY}
+        logLevel: "DEBUG"
