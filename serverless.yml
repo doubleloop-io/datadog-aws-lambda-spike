@@ -60,7 +60,7 @@ custom:
         treeShaking: true
         bundle: true
         minify: false
-        exclude: ["aws-sdk"]
+        exclude: ["dd-trace", "datadog-lambda-js", "aws-sdk"]
     prune:
         automatic: true
         number: 3
